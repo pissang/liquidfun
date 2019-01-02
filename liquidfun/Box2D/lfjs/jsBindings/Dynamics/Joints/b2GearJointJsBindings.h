@@ -2,9 +2,9 @@
 #define B2GEARJOINTJSBINDINGS_H
 
 extern "C" {
-double b2GearJoint_GetRatio(void* joint);
+double EMSCRIPTEN_KEEPALIVE b2GearJoint_GetRatio(void* joint);
 
-void* b2GearJointDef_Create(
+void* EMSCRIPTEN_KEEPALIVE b2GearJointDef_Create(
     void* world,
     // jointDef
     void* bodyA, void* bodyB, double collideConnected,

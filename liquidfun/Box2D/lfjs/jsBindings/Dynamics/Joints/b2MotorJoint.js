@@ -1,9 +1,8 @@
 var b2MotorJoint_SetAngularOffset =
-  Module.cwrap('b2MotorJoint_SetAngularOffset', 'null', ['number', 'number']);
+  Module['_b2MotorJoint_SetAngularOffset'];
 
 var b2MotorJoint_SetLinearOffset =
-  Module.cwrap('b2MotorJoint_SetLinearOffset', 'null',
-    ['number', 'number', 'number']);
+  Module['_b2MotorJoint_SetLinearOffset'];
 
 /**@constructor*/
 function b2MotorJoint(def) {
@@ -21,23 +20,9 @@ b2MotorJoint.prototype.SetLinearOffset = function(v) {
   b2MotorJoint_SetLinearOffset(this.ptr, v.x, v.y);
 };
 
-var b2MotorJointDef_Create = Module.cwrap("b2MotorJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // motor joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number']);
+var b2MotorJointDef_Create = Module['_b2MotorJointDef_Create'];
 
-var b2MotorJointDef_InitializeAndCreate = Module.cwrap("b2MotorJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number', 'number',
-    'number',
-    // motor joint def
-    'number', 'number', 'number']);
+var b2MotorJointDef_InitializeAndCreate = Module['_b2MotorJointDef_InitializeAndCreate'];
 
 /**@constructor*/
 function b2MotorJointDef() {

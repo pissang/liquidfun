@@ -1,80 +1,62 @@
 // b2Body Globals
-var b2Body_ApplyAngularImpulse = Module.cwrap('b2Body_ApplyAngularImpulse', 'null',
-  ['number', 'number', 'number']);
+var b2Body_ApplyAngularImpulse = Module['_b2Body_ApplyAngularImpulse'];
 
-var b2Body_ApplyLinearImpulse = Module.cwrap('b2Body_ApplyLinearImpulse', 'null',
-  ['number', 'number', 'number', 'number', 'number', 'number']);
+var b2Body_ApplyLinearImpulse = Module['_b2Body_ApplyLinearImpulse'];
 
-var b2Body_ApplyForce = Module.cwrap('b2Body_ApplyForce', 'number',
-  ['number', 'number', 'number', 'number', 'number', 'number']);
+var b2Body_ApplyForce = Module['_b2Body_ApplyForce'];
 
-var b2Body_ApplyForceToCenter = Module.cwrap('b2Body_ApplyForceToCenter', 'number',
-  ['number', 'number', 'number', 'number']);
+var b2Body_ApplyForceToCenter = Module['_b2Body_ApplyForceToCenter'];
 
-var b2Body_ApplyTorque = Module.cwrap('b2Body_ApplyTorque', 'number',
-  ['number', 'number', 'number']);
+var b2Body_ApplyTorque = Module['_b2Body_ApplyTorque'];
 
-var b2Body_DestroyFixture = Module.cwrap('b2Body_DestroyFixture', 'null',
-  ['number', 'number']);
+var b2Body_DestroyFixture = Module['_b2Body_DestroyFixture'];
 
-var b2Body_GetAngle = Module.cwrap('b2Body_GetAngle', 'number', ['number']);
+var b2Body_GetAngle = Module['_b2Body_GetAngle'];
 
-var b2Body_GetAngularVelocity =
-  Module.cwrap('b2Body_GetAngularVelocity', 'number', ['number']);
+var b2Body_GetAngularVelocity = Module['_b2Body_GetAngularVelocity'];
 
-var b2Body_GetInertia = Module.cwrap('b2Body_GetInertia', 'number', ['number']);
+var b2Body_GetInertia = Module['_b2Body_GetInertia'];
 
-var b2Body_GetLinearVelocity =
-  Module.cwrap('b2Body_GetLinearVelocity', 'null', ['number', 'number']);
+var b2Body_GetLinearVelocity = Module['_b2Body_GetLinearVelocity'];
 
-var b2Body_GetLocalPoint = Module.cwrap('b2Body_GetLocalPoint', 'null',
-  ['number', 'number', 'number', 'number']);
+var b2Body_GetLocalPoint = Module['_b2Body_GetLocalPoint'];
 
-var b2Body_GetLocalVector = Module.cwrap('b2Body_GetLocalVector', 'null',
-  ['number', 'number', 'number', 'number']);
+var b2Body_GetLocalVector = Module['_b2Body_GetLocalVector'];
 
-var b2Body_GetMass = Module.cwrap('b2Body_GetMass', 'number', ['number']);
+var b2Body_GetMass = Module['_b2Body_GetMass'];
 
-var b2Body_GetPosition = Module.cwrap('b2Body_GetPosition', 'null', ['number', 'number']);
+var b2Body_GetPosition = Module['_b2Body_GetPosition'];
 
-var b2Body_GetTransform = Module.cwrap('b2Body_GetTransform', 'null',
-  ['number', 'number']);
+var b2Body_GetTransform = Module['_b2Body_GetTransform'];
 
-var b2Body_GetType = Module.cwrap('b2Body_GetType', 'number', ['number']);
+var b2Body_GetType = Module['_b2Body_GetType'];
 
-var b2Body_GetWorldCenter = Module.cwrap('b2Body_GetWorldCenter', 'null',
-  ['number', 'number']);
+var b2Body_GetWorldCenter = Module['_b2Body_GetWorldCenter'];
 
-var b2Body_GetWorldPoint = Module.cwrap('b2Body_GetWorldPoint', 'null',
-  ['number', 'number', 'number', 'number']);
+var b2Body_GetWorldPoint = Module['_b2Body_GetWorldPoint'];
 
-var b2Body_GetWorldVector = Module.cwrap('b2Body_GetWorldVector', 'null',
-  ['number', 'number', 'number', 'number']);
+var b2Body_GetWorldVector = Module['_b2Body_GetWorldVector'];
 
-var b2Body_SetAngularVelocity = Module.cwrap('b2Body_SetAngularVelocity', 'null',
-  ['number', 'number']);
+var b2Body_SetAngularVelocity = Module['_b2Body_SetAngularVelocity'];
 
 var b2Body_SetAwake =
-  Module.cwrap('b2Body_SetAwake', 'number',['number', 'number']);
+  Module['_b2Body_SetAwake'];
 
 var b2Body_SetFixedRotation =
-  Module.cwrap('b2Body_SetFixedRotation', 'number',['number', 'number']);
+  Module['_b2Body_SetFixedRotation'];
 
-var b2Body_SetLinearVelocity = Module.cwrap('b2Body_SetLinearVelocity', 'null',
-  ['number', 'number', 'number']);
+var b2Body_SetLinearVelocity = Module['_b2Body_SetLinearVelocity'];
 
-var b2Body_SetMassData = Module.cwrap('b2Body_SetMassData', 'null',
-  ['number', 'number', 'number',
-   'number', 'number']);
+var b2Body_SetMassData = Module['_b2Body_SetMassData'];
 
 var b2Body_SetTransform =
-  Module.cwrap('b2Body_SetTransform', 'null', ['number', 'number', 'number']);
+  Module['_b2Body_SetTransform'];
 
 var b2Body_SetType =
-  Module.cwrap('b2Body_SetType', 'null', ['number', 'number']);
+  Module['_b2Body_SetType'];
 
-var b2Body_SetGravityScale = Module.cwrap('b2Body_SetGravityScale', 'null', ['number', 'number']);
-var b2Body_GetGravityScale = Module.cwrap('b2Body_GetGravityScale', 'number', ['number']);
+var b2Body_SetGravityScale = Module['_b2Body_SetGravityScale'];
+var b2Body_GetGravityScale = Module['_b2Body_GetGravityScale'];
 
 // memory offsets
 var b2Body_xf_offset = Offsets.b2Body.xf;

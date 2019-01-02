@@ -2,10 +2,10 @@
 #define B2WHEELJOINTJSBINDINGS_H
 
 extern "C" {
-void b2WheelJoint_SetMotorSpeed(void* wheel, double speed);
-void b2WheelJoint_SetSpringFrequencyHz(void* wheel, double frequency);
+void EMSCRIPTEN_KEEPALIVE b2WheelJoint_SetMotorSpeed(void* wheel, double speed);
+void EMSCRIPTEN_KEEPALIVE b2WheelJoint_SetSpringFrequencyHz(void* wheel, double frequency);
 
-void* b2WheelJointDef_Create(
+void* EMSCRIPTEN_KEEPALIVE b2WheelJointDef_Create(
     void* world,
     // joint def
     void* bodyA, void* bodyB, double collideConnected,
@@ -15,7 +15,7 @@ void* b2WheelJointDef_Create(
     double localAnchorBy, double localAxisAx, double localAxisAy,
     double maxMotorTorque, double motorSpeed);
 
-void* b2WheelJointDef_InitializeAndCreate(
+void* EMSCRIPTEN_KEEPALIVE b2WheelJointDef_InitializeAndCreate(
     void* world,
     // initialize args
     void* bodyA, void* bodyB, double anchorX,

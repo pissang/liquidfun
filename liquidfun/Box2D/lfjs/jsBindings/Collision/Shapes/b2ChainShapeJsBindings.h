@@ -2,7 +2,7 @@
 #define B2CHAINSHAPEJSBINDINGS_H
 extern "C" {
 // b2body create fixture from chain
-void* b2ChainShape_CreateFixture(
+void* EMSCRIPTEN_KEEPALIVE b2ChainShape_CreateFixture(
     void* body,
     // Fixturedef
     double density, double friction, double isSensor,

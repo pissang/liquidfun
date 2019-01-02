@@ -4,28 +4,9 @@ function b2PulleyJoint(def) {
   this.next = null;
 }
 
-var b2PulleyJointDef_Create = Module.cwrap("b2PulleyJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // pulley joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number']);
+var b2PulleyJointDef_Create = Module['_b2PulleyJointDef_Create'];
 
-var b2PulleyJointDef_InitializeAndCreate = Module.cwrap("b2PulleyJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    // joint def
-    'number',
-    // pulley joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number']);
+var b2PulleyJointDef_InitializeAndCreate = Module['_b2PulleyJointDef_InitializeAndCreate'];
 
 /**@constructor*/
 function b2PulleyJointDef() {

@@ -40,46 +40,31 @@ b2World.RayCast = function(fixturePtr, pointX, pointY, normalX, normalY, fractio
 };
 
 // Emscripten exports
-var b2World_Create = Module.cwrap('b2World_Create', 'number', ['number', 'number']);
+var b2World_Create = Module['_b2World_Create'];
 var b2World_CreateBody =
-  Module.cwrap('b2World_CreateBody', 'number',
-    ['number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number']);
+  Module['_b2World_CreateBody'];
 
 var b2World_CreateParticleSystem =
-  Module.cwrap('b2World_CreateParticleSystem', 'number',
-    ['number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number', 'number', 'number']);
+  Module['_b2World_CreateParticleSystem'];
 
 var b2World_DestroyBody =
-  Module.cwrap('b2World_DestroyBody', 'null', ['number', 'number']);
+  Module['_b2World_DestroyBody'];
 
 var b2World_DestroyJoint =
-  Module.cwrap('b2World_DestroyJoint', 'null', ['number', 'number']);
+  Module['_b2World_DestroyJoint'];
 
 var b2World_DestroyParticleSystem =
-  Module.cwrap('b2World_DestroyParticleSystem', 'null', ['number', 'number']);
+  Module['_b2World_DestroyParticleSystem'];
 
 var b2World_QueryAABB =
-  Module.cwrap('b2World_QueryAABB', 'null',
-    ['number', 'number', 'number' ,'number' ,'number']);
+  Module['_b2World_QueryAABB'];
 
 var b2World_RayCast =
-  Module.cwrap('b2World_RayCast', 'null',
-    ['number', 'number', 'number' ,'number' ,'number']);
+  Module['_b2World_RayCast'];
 
-var b2World_SetContactListener = Module.cwrap('b2World_SetContactListener', 'null', ['number']);
-var b2World_SetGravity = Module.cwrap('b2World_SetGravity', 'null',
-  ['number', 'number', 'number']);
-var b2World_Step = Module.cwrap('b2World_Step', 'null', ['number', 'number', 'number']);
+var b2World_SetContactListener = Module['_b2World_SetContactListener'];
+var b2World_SetGravity = Module['_b2World_SetGravity'];
+var b2World_Step = Module['_b2World_Step'];
 
 var _transBuf = null;
 var _vec2Buf = null;

@@ -1,7 +1,7 @@
 #ifndef B2PARTICLESYSTEMJSBINDINGS
 #define B2PARTICLESYSTEMJSBINDINGS
 extern "C" {
-double b2ParticleSystem_CreateParticle(void* particleSystem,
+double EMSCRIPTEN_KEEPALIVE b2ParticleSystem_CreateParticle(void* particleSystem,
     //particleDef
     double colorR, double colorB, double colorG, double colorA,
     double flags, double group, double lifetime, double positionX,

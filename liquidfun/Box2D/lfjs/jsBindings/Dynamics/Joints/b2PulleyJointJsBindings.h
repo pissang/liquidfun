@@ -2,7 +2,7 @@
 #define B2PULLEYJOINTJSBINDINGS_H
 
 extern "C" {
-void* b2PulleyJointDef_Create(
+void* EMSCRIPTEN_KEEPALIVE b2PulleyJointDef_Create(
     void* world,
     // joint def
     void* bodyA, void* bodyB, double collideConnected,
@@ -12,7 +12,7 @@ void* b2PulleyJointDef_Create(
     double localAnchorAx, double localAnchorAy, double localAnchorBx,
     double localAnchorBy, double ratio);
 
-void* b2PulleyJointDef_InitializeAndCreate(
+void* EMSCRIPTEN_KEEPALIVE b2PulleyJointDef_InitializeAndCreate(
     void* world,
     // initialize args
     void* bodyA, void* bodyB, double anchorAx,

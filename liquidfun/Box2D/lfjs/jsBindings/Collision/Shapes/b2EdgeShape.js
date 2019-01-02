@@ -1,15 +1,5 @@
 var b2EdgeShape_CreateFixture =
-  Module.cwrap('b2EdgeShape_CreateFixture', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // edge data
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2EdgeShape_CreateFixture'];
 
 /** @constructor */
 function b2EdgeShape() {

@@ -1,35 +1,11 @@
 var b2CircleShape_CreateFixture =
-  Module.cwrap('b2CircleShape_CreateFixture', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // Circle members
-      'number', 'number',
-      'number']);
+  Module['_b2CircleShape_CreateFixture'];
 
 var b2CircleShape_CreateParticleGroup =
-  Module.cwrap('b2CircleShape_CreateParticleGroup', 'number',
-    ['number',
-      // particleGroupDef
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number',
-      //Circle
-      'number', 'number', 'number'
-    ]);
+  Module['_b2CircleShape_CreateParticleGroup'];
 
 var b2CircleShape_DestroyParticlesInShape =
-  Module.cwrap('b2CircleShape_DestroyParticlesInShape', 'number',
-    ['number',
-    //circle
-     'number', 'number', 'number',
-     // transform
-     'number', 'number', 'number', 'number']);
+  Module['_b2CircleShape_DestroyParticlesInShape'];
 
 /**@constructor*/
 function b2CircleShape() {

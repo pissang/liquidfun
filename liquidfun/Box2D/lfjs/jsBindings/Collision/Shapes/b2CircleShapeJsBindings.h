@@ -2,7 +2,7 @@
 #define B2CIRCLESHAPEJSBINDINGS_H
 extern "C" {
 // b2Body create fixture from circle
-void* b2CircleShape_CreateFixture(
+void* EMSCRIPTEN_KEEPALIVE b2CircleShape_CreateFixture(
     void* body,
     // Fixturedef
     double density, double friction, double isSensor,
@@ -13,7 +13,7 @@ void* b2CircleShape_CreateFixture(
     double px, double py,
     double radius);
 
-void* b2CircleShape_CreateParticleGroup(
+void* EMSCRIPTEN_KEEPALIVE b2CircleShape_CreateParticleGroup(
     void* particleSystem,
     // ParticleGroupDef
     double angle, double angularVelocity, double colorR,
@@ -25,7 +25,7 @@ void* b2CircleShape_CreateParticleGroup(
     double px, double py,
     double radius);
 
-double b2CircleShape_DestroyParticlesInShape(
+double EMSCRIPTEN_KEEPALIVE b2CircleShape_DestroyParticlesInShape(
     void* particleSystem,
     // circle
     double px, double py, double radius,

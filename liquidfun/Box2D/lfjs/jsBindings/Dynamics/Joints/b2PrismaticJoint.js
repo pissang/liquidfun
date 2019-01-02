@@ -1,19 +1,19 @@
 var b2PrismaticJoint_EnableLimit =
-  Module.cwrap('b2PrismaticJoint_EnableLimit', 'number', ['number', 'number']);
+  Module['_b2PrismaticJoint_EnableLimit'];
 var b2PrismaticJoint_EnableMotor =
-  Module.cwrap('b2PrismaticJoint_EnableMotor', 'number', ['number', 'number']);
+  Module['_b2PrismaticJoint_EnableMotor'];
 var b2PrismaticJoint_GetJointTranslation =
-  Module.cwrap('b2PrismaticJoint_GetJointTranslation', 'number', ['number']);
+  Module['_b2PrismaticJoint_GetJointTranslation'];
 var b2PrismaticJoint_GetMotorSpeed =
-  Module.cwrap('b2PrismaticJoint_GetMotorSpeed', 'number', ['number']);
+  Module['_b2PrismaticJoint_GetMotorSpeed'];
 var b2PrismaticJoint_GetMotorForce =
-  Module.cwrap('b2PrismaticJoint_GetMotorForce', 'number', ['number', 'number']);
+  Module['_b2PrismaticJoint_GetMotorForce'];
 var b2PrismaticJoint_IsLimitEnabled =
-  Module.cwrap('b2PrismaticJoint_IsLimitEnabled', 'number', ['number']);
+  Module['_b2PrismaticJoint_IsLimitEnabled'];
 var b2PrismaticJoint_IsMotorEnabled =
-  Module.cwrap('b2PrismaticJoint_IsMotorEnabled', 'number', ['number']);
+  Module['_b2PrismaticJoint_IsMotorEnabled'];
 var b2PrismaticJoint_SetMotorSpeed =
-  Module.cwrap('b2PrismaticJoint_SetMotorSpeed', 'number', ['number', 'number']);
+  Module['_b2PrismaticJoint_SetMotorSpeed'];
 
 /**@constructor*/
 function b2PrismaticJoint(def) {
@@ -60,29 +60,9 @@ b2PrismaticJoint.prototype.SetMotorSpeed = function(speed) {
 };
 
 
-var b2PrismaticJointDef_Create = Module.cwrap("b2PrismaticJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // prismatic joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number']);
+var b2PrismaticJointDef_Create = Module['_b2PrismaticJointDef_Create'];
 
-var b2PrismaticJointDef_InitializeAndCreate = Module.cwrap("b2PrismaticJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    // joint def
-    'number',
-    // prismatic joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number']);
+var b2PrismaticJointDef_InitializeAndCreate = Module['_b2PrismaticJointDef_InitializeAndCreate'];
 
 /**@constructor*/
 function b2PrismaticJointDef() {

@@ -2,7 +2,7 @@
 #define B2DISTANCEJOINTJSBINDINGS_H
 
 extern "C" {
-void* b2DistanceJointDef_Create(
+void* EMSCRIPTEN_KEEPALIVE b2DistanceJointDef_Create(
     void* world,
     //joint def
     void* bodyA, void* bodyB, double collideConnected,
@@ -11,7 +11,7 @@ void* b2DistanceJointDef_Create(
     double localAnchorAx, double localAnchorAy, double localAnchorBx,
     double localAnchorBy);
 
-void* b2DistanceJointDef_InitializeAndCreate(
+void* EMSCRIPTEN_KEEPALIVE b2DistanceJointDef_InitializeAndCreate(
     void* world,
     void* bodyA, void* bodyB,
     double anchorAx, double anchorAy,

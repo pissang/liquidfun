@@ -1,6 +1,5 @@
 var b2MouseJoint_SetTarget =
-  Module.cwrap('b2MouseJoint_SetTarget', 'null',
-    ['number', 'number', 'number']);
+  Module['_b2MouseJoint_SetTarget'];
 
 /**@constructor*/
 function b2MouseJoint(def) {
@@ -12,14 +11,7 @@ b2MouseJoint.prototype.SetTarget = function(p) {
   b2MouseJoint_SetTarget(this.ptr, p.x, p.y);
 };
 
-var b2MouseJointDef_Create = Module.cwrap("b2MouseJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // mouse joint def
-    'number', 'number', 'number',
-    'number', 'number']);
+var b2MouseJointDef_Create = Module['_b2MouseJointDef_Create'];
 
 /**@constructor*/
 function b2MouseJointDef() {

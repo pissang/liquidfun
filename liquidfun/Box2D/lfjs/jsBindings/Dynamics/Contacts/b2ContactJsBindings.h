@@ -2,7 +2,7 @@
 #define B2CONTACTJSBINDINGS_H
 
 extern "C" {
-void* b2Contact_GetManifold(void* contact);
-void* b2Contact_GetWorldManifold(void* contact);
+void* EMSCRIPTEN_KEEPALIVE b2Contact_GetManifold(void* contact);
+void* EMSCRIPTEN_KEEPALIVE b2Contact_GetWorldManifold(void* contact);
 }
 #endif

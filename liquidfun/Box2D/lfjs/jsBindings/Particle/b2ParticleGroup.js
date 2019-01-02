@@ -13,20 +13,15 @@ var b2_particleGroupInternalMask =
     b2_particleGroupNeedsUpdateDepth;
 
 var b2ParticleGroup_ApplyForce =
-  Module.cwrap('b2ParticleGroup_ApplyForce', 'null',
-    ['number', 'number', 'number']);
+  Module['_b2ParticleGroup_ApplyForce'];
 var b2ParticleGroup_ApplyLinearImpulse =
-  Module.cwrap('b2ParticleGroup_ApplyLinearImpulse', 'null',
-    ['number', 'number', 'number']);
+  Module['_b2ParticleGroup_ApplyLinearImpulse'];
 var b2ParticleGroup_DestroyParticles =
-  Module.cwrap('b2ParticleGroup_DestroyParticles', 'null',
-    ['number', 'number']);
+  Module['_b2ParticleGroup_DestroyParticles'];
 var b2ParticleGroup_GetBufferIndex =
-  Module.cwrap('b2ParticleGroup_GetBufferIndex', 'number',
-    ['number']);
+  Module['_b2ParticleGroup_GetBufferIndex'];
 var b2ParticleGroup_GetParticleCount =
-  Module.cwrap('b2ParticleGroup_GetParticleCount', 'number',
-    ['number']);
+  Module['_b2ParticleGroup_GetParticleCount'];
 
 var b2ParticleGroup_groupFlags_offset = Offsets.b2ParticleGroup.groupFlags;
 

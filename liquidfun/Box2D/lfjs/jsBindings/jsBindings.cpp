@@ -1,5 +1,8 @@
 /* The pure C function declarations need to be externed or they get
 mangled by the compiler*/
+
+#include <emscripten/emscripten.h>
+
 extern "C" {
 #include "Collision/b2CollisionJsBindings.h"
 #include "Collision/Shapes/b2ChainShapeJsBindings.h"
@@ -24,8 +27,9 @@ extern "C" {
 #include "Dynamics/Joints/b2WheelJointJsBindings.h"
 #include "Particle/b2ParticleGroupJsBindings.h"
 #include "Particle/b2ParticleSystemJsBindings.h"
-void GenerateOffsets();
+// void GenerateOffsets();
 }
+
 #include "Collision/b2CollisionJsBindings.cpp"
 #include "Collision/Shapes/b2ChainShapeJsBindings.cpp"
 #include "Collision/Shapes/b2CircleShapeJsBindings.cpp"
@@ -153,39 +157,39 @@ void PrintOffsets(b2WorldManifold* wm) {
   printf("\t\tseparations: %u\n", (unsigned int)&wm->separations - (unsigned int)wm);
   printf("\t},\n");
 }
+*/
 
+// #include <stdio.h>
+// extern "C" {
+// void GenerateOffsets() {
+//   printf("{\n");
+//   //create dummy body to generate offsets
+//   b2World world(b2Vec2(0, 0));
+//   b2BodyDef def;
+//   b2Body* body1 = world.CreateBody(&def);
 
-#include <stdio.h>
-extern "C" {
-void GenerateOffsets() {
-  printf("{\n");
-  //create dummy body to generate offsets
-  b2World world(b2Vec2(0, 0));
-  b2BodyDef def;
-  b2Body* body1 = world.CreateBody(&def);
+//   b2CircleShape s;
+//   b2FixtureDef d;
+//   d.shape = &s;
+//   b2Fixture* f =body1->CreateFixture(&d);
 
-  b2CircleShape s;
-  b2FixtureDef d;
-  d.shape = &s;
-  b2Fixture* f =body1->CreateFixture(&d);
+//   b2ParticleSystemDef psd;
+//   b2ParticleSystem* ps = world.CreateParticleSystem(&psd);
 
-  b2ParticleSystemDef psd;
-  b2ParticleSystem* ps = world.CreateParticleSystem(&psd);
+//   b2ParticleGroupDef pgd;
+//   b2ParticleGroup* pg = ps->CreateParticleGroup(pgd);
 
-  b2ParticleGroupDef pgd;
-  b2ParticleGroup* pg = ps->CreateParticleGroup(pgd);
+//   b2WorldManifold worldManifold;
+// //   PrintOffsets(body1);
+// //   PrintOffsets(f);
+// //   PrintOffsets(pg);
+// //   PrintOffsets(&world);
+// //   PrintOffsets(&worldManifold);
 
-  b2WorldManifold worldManifold;
-  PrintOffsets(body1);
-  PrintOffsets(f);
-  PrintOffsets(pg);
-  PrintOffsets(&world);
-  PrintOffsets(&worldManifold);
+//   // need to instantiate contact differently
+//   //b2Contact contact;
+//   //PrintOffsets(&contact);
 
-  // need to instantiate contact differently
-  //b2Contact contact;
-  //PrintOffsets(&contact);
-
-  printf("};\n");
-}
-}*/
+//   printf("};\n");
+// }
+// }

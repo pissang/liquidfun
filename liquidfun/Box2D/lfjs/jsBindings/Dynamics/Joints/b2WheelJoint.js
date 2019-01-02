@@ -1,8 +1,8 @@
 // wheel joint globals
 var b2WheelJoint_SetMotorSpeed =
-  Module.cwrap('b2WheelJoint_SetMotorSpeed', 'null', ['number', 'number']);
+  Module['_b2WheelJoint_SetMotorSpeed'];
 var b2WheelJoint_SetSpringFrequencyHz =
-  Module.cwrap('b2WheelJoint_SetSpringFrequencyHz', 'null', ['number', 'number']);
+  Module['_b2WheelJoint_SetSpringFrequencyHz'];
 
 /**@constructor*/
 function b2WheelJoint(def) {
@@ -19,28 +19,9 @@ b2WheelJoint.prototype.SetSpringFrequencyHz = function(hz) {
 };
 
 // wheeljoint def
-var b2WheelJointDef_Create = Module.cwrap("b2WheelJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // wheel joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number']);
+var b2WheelJointDef_Create = Module['_b2WheelJointDef_Create'];
 
-var b2WheelJointDef_InitializeAndCreate = Module.cwrap("b2WheelJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    // joint def
-    'number',
-    // wheel joint def
-    'number', 'number', 'number',
-    'number', 'number']);
+var b2WheelJointDef_InitializeAndCreate = Module['_b2WheelJointDef_InitializeAndCreate'];
 
 /** @constructor*/
 function b2WheelJointDef() {

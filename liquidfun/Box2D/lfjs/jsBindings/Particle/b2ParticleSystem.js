@@ -22,47 +22,40 @@ function b2ParticleSystemDef() {
 }
 
 var b2ParticleSystem_CreateParticle =
-  Module.cwrap('b2ParticleSystem_CreateParticle', 'number',
-  ['number',
-    //particle def
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number'
-  ]);
+  Module['_b2ParticleSystem_CreateParticle'];
 
 var b2ParticleSystem_GetColorBuffer =
-  Module.cwrap('b2ParticleSystem_GetColorBuffer', 'number', ['number']);
+  Module['_b2ParticleSystem_GetColorBuffer'];
 
 var b2ParticleSystem_GetParticleCount =
-  Module.cwrap('b2ParticleSystem_GetParticleCount', 'number', ['number']);
+  Module['_b2ParticleSystem_GetParticleCount'];
 
 var b2ParticleSystem_GetParticleLifetime =
-  Module.cwrap('b2ParticleSystem_GetParticleLifetime', 'number', ['number', 'number']);
+  Module['_b2ParticleSystem_GetParticleLifetime'];
 
 var b2ParticleSystem_GetPositionBuffer =
-  Module.cwrap('b2ParticleSystem_GetPositionBuffer', 'number', ['number']);
+  Module['_b2ParticleSystem_GetPositionBuffer'];
 
 var b2ParticleSystem_GetVelocityBuffer =
-  Module.cwrap('b2ParticleSystem_GetVelocityBuffer', 'number', ['number']);
+  Module['_b2ParticleSystem_GetVelocityBuffer'];
 
 var b2ParticleSystem_SetDamping =
-  Module.cwrap('b2ParticleSystem_SetDamping', 'null', ['number', 'number']);
+  Module['_b2ParticleSystem_SetDamping'];
 
 var b2ParticleSystem_SetDensity =
-  Module.cwrap('b2ParticleSystem_SetDensity', 'null', ['number', 'number']);
+  Module['_b2ParticleSystem_SetDensity'];
 
 var b2ParticleSystem_SetGravityScale =
-  Module.cwrap('b2ParticleSystem_SetGravityScale', 'null', ['number', 'number']);
+  Module['_b2ParticleSystem_SetGravityScale'];
 
 var b2ParticleSystem_SetMaxParticleCount =
-  Module.cwrap('b2ParticleSystem_SetMaxParticleCount', 'null', ['number', 'number']);
+  Module['_b2ParticleSystem_SetMaxParticleCount'];
 
 var b2ParticleSystem_SetParticleLifetime =
-  Module.cwrap('b2ParticleSystem_SetParticleLifetime', 'null', ['number', 'number', 'number']);
+  Module['_b2ParticleSystem_SetParticleLifetime'];
 
 var b2ParticleSystem_SetRadius =
-  Module.cwrap('b2ParticleSystem_SetRadius', 'null', ['number', 'number']);
+  Module['_b2ParticleSystem_SetRadius'];
 
 /** @constructor */
 function b2ParticleSystem(ptr) {

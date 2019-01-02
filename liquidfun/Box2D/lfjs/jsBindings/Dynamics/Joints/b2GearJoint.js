@@ -1,5 +1,4 @@
-var b2GearJoint_GetRatio = Module.cwrap("b2GearJoint_GetRatio", 'number',
-  ['number']);
+var b2GearJoint_GetRatio = Module['_b2GearJoint_GetRatio'];
 
 function b2GearJoint(def) {
   this.ptr = null;
@@ -10,13 +9,7 @@ b2GearJoint.prototype.GetRatio = function() {
   return b2GearJoint_GetRatio(this.ptr);
 };
 
-var b2GearJointDef_Create = Module.cwrap("b2GearJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // gear joint def
-    'number', 'number', 'number']);
+var b2GearJointDef_Create = Module['_b2GearJointDef_Create'];
 
 /**@constructor*/
 function b2GearJointDef() {

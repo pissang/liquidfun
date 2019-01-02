@@ -6,25 +6,9 @@ function b2DistanceJoint(def) {
   this.next = null;
 }
 
-var b2DistanceJointDef_Create = Module.cwrap("b2DistanceJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // distance joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number']);
+var b2DistanceJointDef_Create = Module['_b2DistanceJointDef_Create'];
 
-var b2DistanceJointDef_InitializeAndCreate = Module.cwrap("b2DistanceJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number',
-    'number', 'number',
-    'number', 'number',
-    // distance joint def
-    'number', 'number', 'number']);
+var b2DistanceJointDef_InitializeAndCreate = Module['_b2DistanceJointDef_InitializeAndCreate'];
 
 /**@constructor*/
 function b2DistanceJointDef() {

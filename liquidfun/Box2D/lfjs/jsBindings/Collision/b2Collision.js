@@ -12,7 +12,7 @@ b2AABB.prototype.GetCenter = function() {
 
 // todo use just the pointer and offsets to get this data directly from the heap
 var b2Manifold_GetPointCount =
-  Module.cwrap('b2Manifold_GetPointCount', 'number', ['number']);
+  Module['_b2Manifold_GetPointCount'];
 
 /**@constructor*/
 function b2Manifold(ptr) {

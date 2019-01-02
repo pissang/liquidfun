@@ -2,6 +2,6 @@
 #define B2COLLISIONJSBINDINGS_H
 
 extern "C" {
-double b2Manifold_GetPointCount(void* manifold);
+double EMSCRIPTEN_KEEPALIVE b2Manifold_GetPointCount(void* manifold);
 }
 #endif

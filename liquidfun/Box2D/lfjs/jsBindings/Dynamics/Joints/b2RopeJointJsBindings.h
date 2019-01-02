@@ -2,7 +2,7 @@
 #define B2ROPEJOINTJSBINDINGS_H
 
 extern "C" {
-void* b2RopeJointDef_Create(
+void* EMSCRIPTEN_KEEPALIVE b2RopeJointDef_Create(
     void* world,
     // joint def
     void* bodyA, void* bodyB, double collideConnected,

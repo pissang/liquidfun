@@ -1,116 +1,29 @@
 // fixture creation wrappers
 var b2PolygonShape_CreateFixture_3 =
-  Module.cwrap('b2PolygonShape_CreateFixture_3', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // vertices
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2PolygonShape_CreateFixture_3'];
 
 var b2PolygonShape_CreateFixture_4 =
-  Module.cwrap('b2PolygonShape_CreateFixture_4', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // b2Vec2
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2PolygonShape_CreateFixture_4'];
 
 var b2PolygonShape_CreateFixture_5 =
-  Module.cwrap('b2PolygonShape_CreateFixture_5', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // b2Vec2
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2PolygonShape_CreateFixture_5'];
 
 var b2PolygonShape_CreateFixture_6 =
-  Module.cwrap('b2PolygonShape_CreateFixture_6', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // b2Vec2
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2PolygonShape_CreateFixture_6'];
 
 var b2PolygonShape_CreateFixture_7 =
-  Module.cwrap('b2PolygonShape_CreateFixture_7', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // b2Vec2
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2PolygonShape_CreateFixture_7'];
 
 var b2PolygonShape_CreateFixture_8 =
-  Module.cwrap('b2PolygonShape_CreateFixture_8', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // b2Vec2
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number']);
+  Module['_b2PolygonShape_CreateFixture_8'];
 
 // particle group creation wrappers
 var b2PolygonShape_CreateParticleGroup_4 =
-  Module.cwrap('b2PolygonShape_CreateParticleGroup_4', 'number',
-    ['number',
-      // particleGroupDef
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number', 'number', 'number',
-      'number',
-      // polygon
-      'number', 'number',
-      'number', 'number',
-      'number', 'number',
-      'number', 'number'
-    ]);
+  Module['_b2PolygonShape_CreateParticleGroup_4'];
 
 // particle group destruction wrappers
 var b2PolygonShape_DestroyParticlesInShape_4 =
-  Module.cwrap('b2PolygonShape_DestroyParticlesInShape_4', 'number',
-    ['number',
-     //polygon shape
-     'number', 'number',
-     'number', 'number',
-     'number', 'number',
-     'number', 'number',
-     // xf
-     'number', 'number', 'number',
-     'number']);
+  Module['_b2PolygonShape_DestroyParticlesInShape_4'];
 
 /** @constructor */
 function b2PolygonShape() {

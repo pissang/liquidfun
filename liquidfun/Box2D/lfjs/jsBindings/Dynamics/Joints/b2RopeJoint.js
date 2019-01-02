@@ -4,14 +4,7 @@ function b2RopeJoint(def) {
   this.ptr = null;
 }
 
-var b2RopeJointDef_Create = Module.cwrap("b2RopeJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // rope joint def
-    'number', 'number', 'number',
-    'number', 'number']);
+var b2RopeJointDef_Create = Module['_b2RopeJointDef_Create'];
 
 /**@constructor*/
 function b2RopeJointDef() {

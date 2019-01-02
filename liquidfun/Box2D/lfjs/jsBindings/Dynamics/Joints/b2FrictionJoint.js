@@ -1,20 +1,6 @@
-var b2FrictionJointDef_Create = Module.cwrap("b2FrictionJointDef_Create",
-  'number',
-  ['number',
-   // joint Def
-   'number', 'number', 'number',
-   // friction joint def
-   'number', 'number', 'number',
-   'number', 'number', 'number']);
+var b2FrictionJointDef_Create = Module['_b2FrictionJointDef_Create'];
 
-var b2FrictionJointDef_InitializeAndCreate = Module.cwrap("b2FrictionJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number', 'number',
-    'number',
-    // friction joint def
-    'number', 'number', 'number']);
+var b2FrictionJointDef_InitializeAndCreate = Module['_b2FrictionJointDef_InitializeAndCreate'];
 
 function b2FrictionJointDef() {
   // joint def

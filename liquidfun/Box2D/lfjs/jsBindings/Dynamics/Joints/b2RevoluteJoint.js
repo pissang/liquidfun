@@ -1,26 +1,20 @@
 var b2RevoluteJoint_EnableLimit =
-  Module.cwrap('b2RevoluteJoint_EnableLimit', 'number',
-    ['number', 'number']);
+  Module['_b2RevoluteJoint_EnableLimit'];
 
 var b2RevoluteJoint_EnableMotor =
-  Module.cwrap('b2RevoluteJoint_EnableMotor', 'number',
-    ['number', 'number']);
+  Module['_b2RevoluteJoint_EnableMotor'];
 
 var b2RevoluteJoint_GetJointAngle =
-  Module.cwrap('b2RevoluteJoint_GetJointAngle', 'number',
-    ['number']);
+  Module['_b2RevoluteJoint_GetJointAngle'];
 
 var b2RevoluteJoint_IsLimitEnabled =
-  Module.cwrap('b2RevoluteJoint_IsLimitEnabled', 'number',
-    ['number']);
+  Module['_b2RevoluteJoint_IsLimitEnabled'];
 
 var b2RevoluteJoint_IsMotorEnabled =
-  Module.cwrap('b2RevoluteJoint_IsMotorEnabled', 'number',
-    ['number']);
+  Module['_b2RevoluteJoint_IsMotorEnabled'];
 
 var b2RevoluteJoint_SetMotorSpeed =
-  Module.cwrap('b2RevoluteJoint_SetMotorSpeed', 'number',
-    ['number', 'number']);
+  Module['_b2RevoluteJoint_SetMotorSpeed'];
 
 /** @constructor */
 function b2RevoluteJoint(revoluteJointDef) {
@@ -65,26 +59,10 @@ b2RevoluteJoint.prototype.SetMotorSpeed = function(speed) {
 
 
 var b2RevoluteJointDef_Create =
-  Module.cwrap('b2RevoluteJointDef_Create', 'number',
-    ['number',
-    //joint def
-    'number', 'number', 'number',
-    // revolute joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number', 'number',
-    'number', 'number']);
+  Module['_b2RevoluteJointDef_Create'];
 
 var b2RevoluteJointDef_InitializeAndCreate =
-  Module.cwrap('b2RevoluteJointDef_InitializeAndCreate', 'number',
-    ['number',
-      //initialize args
-     'number', 'number', 'number',
-     'number',
-      //revoluteJointDef
-     'number', 'number', 'number',
-     'number', 'number', 'number',
-     'number']);
+  Module['_b2RevoluteJointDef_InitializeAndCreate'];
 
 /** @constructor */
 function b2RevoluteJointDef() {

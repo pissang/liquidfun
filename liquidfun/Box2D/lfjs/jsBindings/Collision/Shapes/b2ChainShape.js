@@ -1,11 +1,5 @@
 var b2ChainShape_CreateFixture =
-  Module.cwrap('b2ChainShape_CreateFixture', 'number',
-    ['number',
-      // Fixture defs
-      'number', 'number', 'number',
-      'number', 'number',
-      // Chain vertices and count
-      'number', 'number']);
+  Module['_b2ChainShape_CreateFixture'];
 
 /**@constructor*/
 function b2ChainShape() {

@@ -123,8 +123,8 @@ B2FRICTIONJOINT = \
 
 B2GEARJOINT = \
 	'_b2GearJoint_GetRatio', \
-	'_b2GearJointDef_Create', \
-	'_b2GearJointDef_InitializeAndCreate'
+	'_b2GearJointDef_Create'
+	# '_b2GearJointDef_InitializeAndCreate'
 
 B2JOINT = \
 	'_b2Joint_GetBodyA', \
@@ -225,7 +225,6 @@ B2WORLD = \
 	'_b2World_Step'
 
 EXPORTS = EXPORTED_FUNCTIONS="[ \
-	'_GenerateOffsets', \
 	$(B2BODY), \
 	$(B2CHAINSHAPE), \
 	$(B2CIRCLESHAPE), \

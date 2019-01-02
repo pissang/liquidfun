@@ -21,9 +21,9 @@ function b2Fixture() {
 }
 
 var b2Fixture_TestPoint =
-  Module.cwrap('b2Fixture_TestPoint', 'number', ['number', 'number', 'number']);
+  Module['_b2Fixture_TestPoint'];
 var b2Fixture_Refilter =
-  Module.cwrap('b2Fixture_Refilter', 'null', ['number']);
+  Module['_b2Fixture_Refilter'];
 
 b2Fixture.prototype._SetPtr = function(ptr) {
   this.ptr = ptr;

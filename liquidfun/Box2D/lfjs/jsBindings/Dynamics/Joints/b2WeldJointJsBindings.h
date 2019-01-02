@@ -2,7 +2,7 @@
 #define B2WELDJOINTJSBINDINGS_H
 
 extern "C" {
-void* b2WeldJointDef_Create(
+void* EMSCRIPTEN_KEEPALIVE b2WeldJointDef_Create(
     void* world,
     // joint def
     void* bodyA, void* bodyB, double collideConnected,
@@ -11,7 +11,7 @@ void* b2WeldJointDef_Create(
     double localAnchorAy, double localAnchorBx, double localAnchorBy,
     double referenceAngle);
 
-void* b2WeldJointDef_InitializeAndCreate(
+void* EMSCRIPTEN_KEEPALIVE b2WeldJointDef_InitializeAndCreate(
     void* world,
     // initialize args
     void* bodyA, void* bodyB, double anchorX,

@@ -2,7 +2,7 @@
 #define B2EDGESHAPEJSBINDINGS_H
 extern "C" {
 // b2Body create fixture from edgeshape
-void* b2EdgeShape_CreateFixture(
+void* EMSCRIPTEN_KEEPALIVE b2EdgeShape_CreateFixture(
     void* body,
     // Fixturedef
     double density, double friction, double isSensor,

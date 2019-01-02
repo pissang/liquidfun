@@ -1,22 +1,6 @@
-var b2WeldJointDef_Create = Module.cwrap("b2WeldJointDef_Create",
-  'number',
-  ['number',
-    // joint Def
-    'number', 'number', 'number',
-    // weld joint def
-    'number', 'number', 'number',
-    'number', 'number', 'number']);
+var b2WeldJointDef_Create = Module['_b2WeldJointDef_Create'];
 
-var b2WeldJointDef_InitializeAndCreate = Module.cwrap("b2WeldJointDef_InitializeAndCreate",
-  'number',
-  ['number',
-    // initialize args
-    'number', 'number', 'number',
-    'number',
-    // joint def
-    'number',
-    // weld joint def
-    'number', 'number']);
+var b2WeldJointDef_InitializeAndCreate = Module['_b2WeldJointDef_InitializeAndCreate'];
 
 /** @constructor */
 function b2WeldJointDef() {
