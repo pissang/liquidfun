@@ -12,11 +12,13 @@
   <script>
       Module = {
           postRun() {
-              initTestbed();
+              setTimeout(function () {
+                initTestbed();
+              }, 500);
           }
       }
   </script>
-  <script src="liquidfun.js"></script>
+  <script src="./liquidfun.js"></script>
 
   <!-- testbed code !-->
   <script src="testbed/renderer.js"></script>
